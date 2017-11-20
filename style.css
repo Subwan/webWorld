@@ -1,1 +1,18 @@
- 
+.social-bar__link {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  background: url("./images/social.png") no-repeat;
+}
+
+.social-bar__fb {
+  background-position: -45px 0px;
+}
+
+.social-bar__twitter {
+  background-position: -92px 0px;
+}
+
+.social-bar__in {
+  background-position: -140px 0px;
+}
