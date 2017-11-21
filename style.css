@@ -89,6 +89,9 @@
   background: url("./images/search.png") no-repeat 90%;
 }
 
+
+
+
 .section-one__main-text  {
   display: flex;
   flex-flow: row wrap;
@@ -100,5 +103,46 @@
 }
 
 .section-one__top-text {
+  width: 50%;
+  margin: auto;
   margin-top: 20px;
+}
+
+
+.section-one__tabs {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  height: 300px;
+  color: #818181;
+  text-align: center;
+}
+
+.section-one__tab {
+  width: 325px;
+  margin: 0 22px;
+}
+
+.section-one__tab-two {
+  align-self: flex-end;
+}
+
+.section-one__icon {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  fill: #818181;
+}
+
+.section-one__icon:hover {
+  fill: #00c8c8;
+}
+
+
+.section-two {
+  margin-top: 25px;
+}
+
+.section-two__background-image {
+  width: 100%;
 }
