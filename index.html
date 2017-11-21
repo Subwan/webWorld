@@ -9,18 +9,55 @@
   </head>
 
   <body>
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+      <symbol id="icon-facebook" viewBox="0 0 32 32">
+        <title>facebook</title>
+        <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+      </symbol>
+      <symbol id="icon-twitter" viewBox="0 0 32 32">
+        <title>twitter</title>
+        <path d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"></path>
+      </symbol>
+      <symbol id="icon-rss" viewBox="0 0 32 32">
+        <title>rss</title>
+        <path d="M4.259 23.467c-2.35 0-4.259 1.917-4.259 4.252 0 2.349 1.909 4.244 4.259 4.244 2.358 0 4.265-1.895 4.265-4.244-0-2.336-1.907-4.252-4.265-4.252zM0.005 10.873v6.133c3.993 0 7.749 1.562 10.577 4.391 2.825 2.822 4.384 6.595 4.384 10.603h6.16c-0-11.651-9.478-21.127-21.121-21.127zM0.012 0v6.136c14.243 0 25.836 11.604 25.836 25.864h6.152c0-17.64-14.352-32-31.988-32z"></path>
+      </symbol>
+      <symbol id="icon-linkedin2" viewBox="0 0 32 32">
+        <title>linkedin2</title>
+        <path d="M12 12h5.535v2.837h0.079c0.77-1.381 2.655-2.837 5.464-2.837 5.842 0 6.922 3.637 6.922 8.367v9.633h-5.769v-8.54c0-2.037-0.042-4.657-3.001-4.657-3.005 0-3.463 2.218-3.463 4.509v8.688h-5.767v-18z"></path>
+        <path d="M2 12h6v18h-6v-18z"></path>
+        <path d="M8 7c0 1.657-1.343 3-3 3s-3-1.343-3-3c0-1.657 1.343-3 3-3s3 1.343 3 3z"></path>
+      </symbol>
+    </defs>
+    </svg>
+
     <nav class="header navbar navbar-inverse navbar-fixed-top">
       <div class="container">
         <div class="nav navbar-header">
           <img class="navbar-brand" src="./images/logo.png">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#social-bar" aria-expanded="false" aria-controls="navbar">
+               <span class="sr-only">Toggle navigation</span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+               <span class="icon-bar"></span>
+             </button>
         </div>
 
-        <div class="social-bar navbar-from navbar-right">
+        <div id="social-bar" class="social-bar navbar-collapse collapse navbar-right">
           <ul class="nav navbar-nav">
-            <li><a href="#one"><span  class="social-bar__link social-bar__one"></span></a></li>
-            <li><a href="#fb"><span  class="social-bar__link social-bar__fb"></span></a></li>
-            <li><a href="#twitter"><span  class="social-bar__link social-bar__twitter"></span></a></li>
-            <li><a href="#in"><span class="social-bar__link social-bar__in"></span></a></li>
+            <li><a href="#rss">
+              <svg class="icon icon-rss social-bar__icon"><use xlink:href="#icon-rss"></use></svg>
+            </a></li>
+            <li><a href="#fb">
+               <svg class="icon icon-facebook social-bar__icon"><use xlink:href="#icon-facebook"></use></svg>
+            </a></li>
+            <li><a href="#twitter">
+              <svg class="icon icon-twitter social-bar__icon"><use xlink:href="#icon-twitter">
+            </a></li>
+            <li><a href="#linkedin">
+              <svg class="icon icon-linkedin2 social-bar__icon"><use xlink:href="#icon-linkedin2">
+            </a></li>
           </ul>
         </div>
       </div>
@@ -122,13 +159,26 @@
       </div>
     </div>
 
+    <svg style="position: absolute; width: 0; height: 0; overflow: hidden" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+    <symbol id="icon-home" viewBox="0 0 1024 1024">
+    	<title>home</title>
+    	<path class="path1" d="M512 96l-512 512 96 96 96-96v416h256v-192h128v192h256v-416l96 96 96-96-512-512zM512 512c-35.346 0-64-28.654-64-64s28.654-64 64-64c35.346 0 64 28.654 64 64s-28.654 64-64 64z"></path>
+    </symbol>
+    </defs>
+    </svg>
+
+
     <div class="section-one">
       <div class="section-one__main-text">
         <h1 class="section-one__top-header">LOREM IPSUM IS <b>SIMPLY DUMMY</b> TEXT OF THE PRINTING.</h1>
         <p class="section-one__top-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the <br> 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
           book. <br> It has survived not only five centuries.</p>
       </div>
+      <div class="">
     </div>
+
+
 
 
     <script type="text/javascript" src="dist/bundle.js"></script>

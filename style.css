@@ -2,24 +2,19 @@
   height: 59px;
 }
 
-.social-bar__link {
+
+
+.social-bar__icon {
   display: inline-block;
-  width: 25px;
-  height: 25px;
-  background: url("./images/social.png") no-repeat;
+  width: 26px;
+  height: 26px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
 }
 
-.social-bar__fb {
-  background-position: -45px 0px;
-}
 
-.social-bar__twitter {
-  background-position: -92px 0px;
-}
 
-.social-bar__in {
-  background-position: -140px 0px;
-}
 
 .carousel {
   height: 554px;
@@ -94,16 +89,13 @@
   background: url("./images/search.png") no-repeat 90%;
 }
 
-.section-one {
+.section-one__main-text  {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin-top: 23px;
   margin-bottom: 35px;
   color: #818181;
-}
-
-.section-one__main-text {
   text-align: center;
 }
 
