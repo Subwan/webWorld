@@ -172,15 +172,16 @@
 
 /*--------section two--------------*/
 
-/*
+
 .section-two {
   background: url("./images/section2.png") no-repeat;
-}*/
+  background-size: 100%;
 
-/*.section-two__background-image {
-  position: absolute;
-  width: 100%;
-}*/
+}
+
+.section-two__background-image {
+  margin-top: 130px;
+}
 
 .section-two {
   display: flex;
