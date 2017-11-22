@@ -6,10 +6,14 @@
   display: inline-block;
   width: 26px;
   height: 26px;
-  stroke-width: 0;
-  stroke: currentColor;
   fill: currentColor;
 }
+
+
+
+
+/*--------carousel--------------*/
+
 
 .carousel {
   height: 554px;
@@ -53,6 +57,12 @@
   height: 813px;
 }
 
+
+
+
+/*--------menu--------------*/
+
+
 .menu {
   position: absolute;
   background-color: #efefef;
@@ -87,10 +97,20 @@
 
 
 
+/*--------section one--------------*/
+
+
+.section-one {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
 .section-one__main-text {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+  width: 1072px;
   margin-top: 23px;
   margin-bottom: 35px;
   color: #818181;
@@ -98,7 +118,6 @@
 }
 
 .section-one__top-text {
-  width: 50%;
   margin: auto;
   margin-top: 20px;
 }
@@ -106,7 +125,8 @@
 .section-one__tabs {
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-between;;
+  width: 1072px;
   min-height: 300px;
   color: #818181;
   text-align: center;
@@ -114,7 +134,7 @@
 
 .section-one__tab {
   width: 325px;
-  margin: 0 22px;
+  /*margin: 0 22px;*/
 }
 
 .section-one__tab-two {
@@ -132,6 +152,7 @@
   fill: #00c8c8;
 }
 
+/*--------section two--------------*/
 
 /*
 .section-two {
@@ -144,21 +165,31 @@
 }*/
 
 .section-two {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
   margin-top: 51px;
 }
 
 .section-two__row {
+  width: 1072px;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
+  justify-content: space-between;
   color: #818181;
   z-index: 100;
+}
+
+@media screen (max-width: 500px) {
+  .section-two__row {
+    justify-content: center;
+  }
 }
 
 .section-two__item {
   width: 333px;
   border: 1px solid #818181;
-  margin: 25px 8px 30px 22px
+  margin-bottom: 30px;
 }
 
 .section-two__item-text {
@@ -167,15 +198,74 @@
 }
 
 
+/*--------section customer--------------*/
 
 .section-customer {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
+}
+
+.section-customer__container {
+  display: flex;
+  width: 1072px;
+  flex-flow: row wrap;
+  justify-content: space-between;
   align-items: baseline;
 }
 
-.section-customer__item {
-  width: 200px;
-  /*margin: 0 30px;*/
+
+
+/*--------section info--------------*/
+
+.info {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 50px;
+  background-color: #4b4d4e;
+  color: #c0c0c0;
+}
+
+.info__container {
+  display: flex;
+  width: 1072px;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.info__item {
+  max-width: 205px;
+}
+
+.info__img {
+  display: inline-block;
+  fill: #00c8c8;
+}
+
+.info__clock {
+  width: 14px;
+  height: 14px;
+}
+
+.info__contact-img {
+  width: 16px;
+  height: 16px;
+}
+
+
+.info__h3 {
+  color: #ffffff;
+}
+
+.info__hr {
+  color: #c0c0c0;
+
+}
+
+.info mark {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 0px;
 }
