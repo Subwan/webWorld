@@ -24,14 +24,9 @@
 
 .social-bar__icon:hover {
   fill: #ffffff;
-
 }
 
-
-
-
 /*--------carousel--------------*/
-
 
 .carousel {
   height: 554px;
@@ -75,11 +70,7 @@
   height: 813px;
 }
 
-
-
-
 /*--------menu--------------*/
-
 
 .menu {
   position: absolute;
@@ -106,17 +97,14 @@
 }
 
 .search__field {
+  width: 210px !important;
   margin-top: 10px;
   border-radius: 0px;
   background-color: #ffffff !important;
   background: url("./images/search.png") no-repeat 90%;
 }
 
-
-
-
 /*--------section one--------------*/
-
 
 .section-one {
   display: flex;
@@ -143,7 +131,8 @@
 .section-one__tabs {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;;
+  justify-content: space-between;
+  ;
   width: 1072px;
   min-height: 300px;
   color: #818181;
@@ -172,24 +161,20 @@
 
 /*--------section two--------------*/
 
-
-.section-two {
-  background: url("./images/section2.png") no-repeat;
-  background-size: 100%;
-
-}
-
-.section-two__background-image {
-  margin-top: 130px;
-}
-
 .section-two {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin-top: 51px;
   margin-bottom: 30px;
+  background: url("./images/section2.png") no-repeat;
+  background-size: 100% 100%;
 }
+
+.section-two__background-image {
+  margin-top: 130px;
+}
+
 
 .section-two__row {
   width: 1072px;
@@ -198,13 +183,6 @@
   justify-content: space-between;
   color: #818181;
   z-index: 100;
-}
-/*????????????????????*/
-@media only screen and (max-width: 500px) {
-  .section-two__row {
-    justify-content: center;
-    background-color: red;
-  }
 }
 
 .section-two__item {
@@ -217,7 +195,6 @@
   padding: 20px;
   margin-top: -20px;
 }
-
 
 /*--------section customer--------------*/
 
@@ -234,8 +211,6 @@
   justify-content: space-between;
   align-items: baseline;
 }
-
-
 
 /*--------section info--------------*/
 
@@ -270,19 +245,44 @@
   height: 14px;
 }
 
+.info__date_margin {
+  margin-left: 5px;
+  color: #898989;
+}
+
 .info__contact-img {
   width: 16px;
   height: 16px;
 }
 
+.info__contacts {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.info__contact-text_margin {
+  margin-left: 20px;
+}
+
+.info__link {
+  color: #c0c0c0;
+}
+
+.info__link:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
 
 .info__h3 {
   color: #ffffff;
 }
 
 .info__hr {
-  color: #c0c0c0;
-
+  border: none;
+  color: #898989;
+  background-color: #898989;
+  height: 1px;
 }
 
 .info mark {
@@ -292,9 +292,8 @@
   padding: 0px;
 }
 
-
-
 /*-------------footer-------------*/
+
 .footer {
   display: flex;
   flex-flow: row wrap;
@@ -310,4 +309,13 @@
   flex-flow: row wrap;
   justify-content: space-between;
   width: 1072px;
+}
+
+
+
+
+@media only screen and (max-width: 1072px) {
+  .section-two__row {
+    justify-content: center;
+  }
 }
